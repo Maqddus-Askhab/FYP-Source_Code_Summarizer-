@@ -1,0 +1,6 @@
+.content {
+    display: none; /* Hide all content by default */
+}
+.active {
+    display: block; /* Show active content */
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="editor.css">
+  <link rel="stylesheet" href="style2.css">
+ 
+  
+</head>
+
+<body>
+  <!--
+  <header>
+    <nav class="wrapper flex">
+      <h1>SOURCE CODE <br> <span>SUMMARIZER</span></h1>
+
+      <ul class="flex">
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="editor.html">Summarize Code</a></li>
+        <li><a href="#about_us">About Us</a></li>
+        <li><a href="doc.html">Documentation</a></li>
+        <li><a href="contact_form.html">Contact</a></li>
+      </ul>
+
+      <div class="user-actions">
+        <button class="signup-btn"> <a href="sign_up.html">Sign Up</a> </button>
+        <button class="login-btn"><a href="login.html">Login</a></button>
+      </div>
+
+    </nav>
+  </header>
+-->
+<header class="header">
+  <nav class="navbar">
+      <a href="#" class="nav-logo"><h1>SOURCE CODE <br> <span>SUMMARIZER</span></h1></a>
+      <ul class="nav-menu flex">
+          <li class="nav-item">
+            <a href="index2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="editor.html">Summarize Code</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about_us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="doc.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact_form.html">Contact</a>
+          </li>
+
+          <div class="user-actions" id="nav-links-desktop">
+            <button class="signup-btn"> <a href="sign_up.html">Sign Up</a> </button>
+            <button class="login-btn"><a href="login.html">Login</a></button>
+        </div>
+      </ul>
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+  </nav>
+</header>
+  <section class="editor documentation">
+    <h1> SOURCE CODE <SPan>SUMMARIZER</SPan></h1>
+
+    <div class="wrapper">
+        <div class="box flex">
+            <div class="left_content">
+                <div class="left_side_text">
+                    <nav>
+                        <ul>
+                            <li id="tab-summarizer" class="btn_tab active_tab"> CODE SUMMARIZER</li>
+                            <li id="tab-error" class="btn_tab ">ERROR DETECTION</li>
+                            <li id="tab-comment" class="btn_tab">COMMENT ANALYSIS</li>
+                            <li id="tab-customize" class="btn_tab">CUSTOMIZATION    </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="right_content">
+                <div id="content-summarizer" class="content active">
+                    <textarea type="text" placeholder="Provide you code snippet to summarize!" class="query-input"></textarea>
+                    <button id="comment-btn">
+                      <span class="text">Generate Summary</span>
+                    </button>
+                    <div class="response-output"></div>
+                </div>
+                <div id="content-error" class="content hidden">
+                    <textarea type="text" placeholder="Provide your code to detect and resolve any errors! " class="query-input"></textarea>
+                    <button id="comment-btn">
+                      <span class="text">   Detect Errors</span>
+                    </button>
+                    <div class="response-output"></div>
+                </div>
+                <div id="content-comment" class="content hidden">
+                    <textarea type="text" placeholder="Provide your code to analyze comments!" class="query-input"></textarea>
+                    <button id="comment-btn">
+                      <span class="text">Provide Comment</span>
+                    </button>
+                    <div class="response-output"></div>
+                </div>
+                <div id="content-customize" class="content hidden">
+                    <textarea type="text" placeholder="Provide me your code to customize your code!" class="query-input"></textarea>
+                    <button id="comment-btn">
+                      <span class="text">Customize</span>
+                    </button>
+                    <div class="response-output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="wrapper">
+      <div class="box flex">
+          <div class="left_content">
+              <div class="left_side_text">
+                <nav>
+                    <ul>
+                        <li id="tab-summarizer" class="btn_tab">Code Summarizer</li>
+                        <li id="tab-error" class="btn_tab">Error Detection</li>
+                        <li id="tab-comment" class="btn_tab">Comment Analysis</li>
+                        <li id="tab-customize" class="btn_tab">Customization</li>
+                    </ul>
+                </nav>
+              </div>
+          </div>
+          <div class="right_content">
+                <div id="content-summarizer" class="content hidden">
+                    <input type="text" placeholder="Please ask me anything" class="query-input">
+                    <div class="response-output"></div>
+                  
+                </div>
+                <div id="content-error" class="content hidden">
+                    <input type="text" placeholder="Please ask me anything" class="query-input">
+                    <div class="response-output"></div>
+                    
+                </div>
+                <div id="content-comment" class="content hidden">
+                    <input type="text" placeholder="Please ask me anything" class="query-input">
+                    <div class="response-output"></div>
+                    
+                </div>
+                <div id="content-customize" class="content hidden">
+                    <input type="text" placeholder="Please ask me anything" class="query-input">
+                    <div class="response-output"></div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> -->
+</div>
+
+  </section>
+
+
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="index2.html">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="editor.html">Code Summarization</a></li>
+      <li class="menu__item"><a class="menu__link" href="#about_us">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="doc.html">Documentation</a></li>
+      <li class="menu__item"><a class="menu__link" href="contact_form.html">Contact</a></li>
+
+    </ul>
+    <p>&copy;2024 Source Code Summarizer | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script src="tab-switching.js"></script>
+  <script src="socket_server2.js"></script>
+  <script src="responsive.js"></script>
+</body>
+
+
+</html>

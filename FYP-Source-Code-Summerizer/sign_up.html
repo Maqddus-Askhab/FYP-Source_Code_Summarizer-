@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+<!--
+    <header>
+        <nav class="wrapper flex">
+            <h1>SOURCE CODE <br> <span>SUMMARIZER</span></h1>
+
+            <ul class="flex">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="editor.html">Summarize Code</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="doc.html">Documentation</a></li>
+                <li><a href="contact_form.html">Contact</a></li>
+            </ul>
+
+            <div class="user-actions">
+                <button class="signup-btn"> <a href="sign_up.html">Sign Up</a> </button>
+                <button class="login-btn"><a href="login.html">Login</a></button>
+            </div>
+
+        </nav>
+    </header>
+-->
+<header class="header">
+    <nav class="navbar">
+        <a href="#" class="nav-logo"><h1>SOURCE CODE <br> <span>SUMMARIZER</span></h1></a>
+        <ul class="nav-menu flex">
+            <li class="nav-item">
+              <a href="index2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="editor.html">Summarize Code</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about_us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="doc.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact_form.html">Contact</a>
+            </li>
+
+            <div class="user-actions" id="nav-links-desktop">
+              <button class="signup-btn"> <a href="sign_up.html">Sign Up</a> </button>
+              <button class="login-btn"><a href="login.html">Login</a></button>
+          </div>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+    <div class="sign_up">
+        <div class="container">
+            <div class="title">REGISTRATION FORM</div>
+            <div class="content">
+                <form id="registrationForm">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Username</span>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Password</span>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="gender-details">
+                        <span class="gender-title">Gender</span>
+                        <div class="category">
+                          <input type="radio" name="gender" id="male" value="Male">
+                          <label for="male">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                          </label>
+                          <input type="radio" name="gender" id="female" value="Female">
+                          <label for="female">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                          </label>
+                          <input type="radio" name="gender" id="preferNotToSay" value="Prefer not to say">
+                          <label for="preferNotToSay">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                          </label>
+                        </div>
+                      </div>
+                    <div class="button">
+                        <input type="submit" value="Register">
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index2.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="editor.html">Code Summarization</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about_us">About Us</a></li>
+            <li class="menu__item"><a class="menu__link" href="doc.html">Documentation</a></li>
+            <li class="menu__item"><a class="menu__link" href="contact_form.html">Contact</a></li>
+
+        </ul>
+        <p>&copy;2024 Source Code Summarizer | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+    
+            const fullName = document.getElementById("fullName").value;
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+    
+            const userData = {
+                fullName: fullName,
+                userName: username,
+                email: email,
+                phoneNumber: phoneNumber,
+                password: password,
+                confirmPassword: confirmPassword,
+                gender: gender
+            };
+    
+            // try {
+                const response = await fetch("http://localhost:8006/signup", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                });
+                console.log("response: ", response)
+                //console.log("resp.msg: ", response.message)
+                //console.log('result json = ', response.json())
+                const result = await response.json();
+                console.log("res: ", result)
+                if (result.message) {
+                    
+                    // alert(result.message);c  
+                    // alert("Successfull");
+                    window.location.href = "editor.html";
+                } 
+
+                else {
+                    alert("Error: " + result.detail);
+                }
+            // } 
+    //         catch (error) {
+    //             console.error("Error:", error);
+    //             alert("An error occurred. Please try again later.");
+    // }
+        });
+    </script>
+    <script src="responsive.js"></script>
+    
+</body>
+
+</html>
