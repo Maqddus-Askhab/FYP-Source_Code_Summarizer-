@@ -1,0 +1,163 @@
+.content {
+    display: none; /* Hide all content by default */
+}
+.active {
+    display: block; /* Show active content */
+}
+:root {
+    --primary-color: #03ddc2;
+    --secondary-color: #263238;
+    --dark-color: #000605;
+    --light-color: #ebf9f7;
+    --success-color: hsl(0, 0%, 100%);
+    --error-color: #d9534f;
+  
+  }
+  
+  .btn_tab {
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color */
+    padding: 0.75rem 1rem; /* Assuming you might want some padding, adjust as necessary */
+    margin: 25px; /* Spacing between tabs, adjust as necessary */
+    display: inline-block; /* Helps with alignment and applying padding/margin */
+  }
+  
+  /* Hover effect for tabs */
+  .btn_tab:hover {
+    background-color: rgb(100, 100, 186); /* Darker background on hover */
+    color: rgb(230, 230, 234); /* Lighter text on hover */
+    cursor: pointer; /* Changes the mouse cursor to indicate clickability */
+    border-radius: 15px; /* Rounded corners for better aesthetics */
+  }
+
+
+  .active_tab {
+    background-color:rgb(76, 69, 178); /* Different background for active tab */
+    color: rgb(15, 4, 173); /* Different text color for visibility */
+    border: 2px solid rgb(33, 33, blue); /* Highlight active tab */
+    border-radius: 15px; /* Rounded corners for better aesthetics */
+    padding: 10px 15px; /* Sufficient padding */
+  }
+  
+/* Base Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes full viewport height */
+
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+  
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .flex ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav a:hover {
+    color: #4f46e5;
+  }
+  
+  header .bg-indigo-600 {
+    background-color: #4f46e5;
+  }
+  
+  section.editor {
+    padding: 2rem 0;
+    min-height: calc(100vh - 80px); /* Adjust the minimum height */
+  }
+  
+  section.editor .container {
+    background-color: #fff;
+    padding: 8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* max-height: max-content; */
+    min-height: 75vh;/* Set minimum height for the container*/
+
+  }
+  
+  section.editor h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #40404b;
+  }
+  
+  textarea.query-input {
+    width: 100%;
+    height: 60px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  textarea.query-input:focus {
+    border-color: #4f46e5;
+    outline: none;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  /* .btn_tab {
+    display: block;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn_tab.active_tab,
+  .btn_tab:hover {
+    background-color: #e0e7ff;
+  }
+   */
+  /* .content {
+    display: none;
+  }
+   */
+  .content.active {
+    display: block;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ddd;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  .response-output {
+    max-height: 260px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-top: 1rem;
+  }

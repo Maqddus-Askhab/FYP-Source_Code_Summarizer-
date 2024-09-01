@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Contact Us Form | Source Code Summarizer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-white shadow">
+    <nav class="container mx-auto p-4 flex justify-between items-center ">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold">
+          SOURCE CODE <br />
+          <span class="text-indigo-600">SUMMARIZER</span>
+        </h1>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <ul class="flex space-x-4">
+          <li>
+            <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+              >Summarize Code</a
+            >
+          </li>
+          <li>
+            <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+              >Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact_form.html"
+              class="text-gray-700 hover:text-indigo-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="flex space-x-4">
+          <a
+            href="sign_up.html"
+            class="bg-indigo-600 text-white px-4 py-2 rounded"
+            >Sign Up</a
+          >
+          <a
+            href="login.html"
+            class="bg-gray-600 text-white px-4 py-2 rounded"
+            >Login</a
+          >
+        </div>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <ion-icon name="menu" size="large"></ion-icon>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="space-y-4 p-4">
+        <li>
+          <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+            >Summarize Code</a
+          >
+        </li>
+        <li>
+          <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a
+            href="contact_form.html"
+            class="text-gray-700 hover:text-indigo-600"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="sign_up.html"
+            class="bg-indigo-600 text-white px-4 py-2 rounded block text-center"
+            >Sign Up</a
+          >
+        </li>
+        <li>
+          <a
+            href="login.html"
+            class="bg-gray-600 text-white px-4 py-2 rounded block text-center"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container mx-auto my-10 p-6 bg-white shadow-md rounded-md">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-1/2 p-6">
+        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+        <div class="mb-4">
+          <i class="fas fa-map-marker-alt text-indigo-500"></i>
+          <span class="ml-2 font-semibold">Address:</span>
+          <p class="ml-6">123 Maple Street, Springfield, MA 01103, United States</p>
+        </div>
+        <div class="mb-4">
+          <i class="fas fa-phone-alt text-indigo-500"></i>
+          <span class="ml-2 font-semibold">Phone:</span>
+          <p class="ml-6">+0098 9893 0000</p>
+          <p class="ml-6">+0096 3434 0000</p>
+        </div>
+        <div class="mb-4">
+          <i class="fas fa-envelope text-indigo-500"></i>
+          <span class="ml-2 font-semibold">Email:</span>
+          <p class="ml-6">maqddusbutool123@gmail.com</p>
+          <p class="ml-6">maqddusbutool582@gmail.com</p>
+        </div>
+      </div>
+      <div class="md:w-1/2 p-6">
+        <h2 class="text-2xl font-bold mb-6">Send us a message</h2>
+        <p class="mb-6">If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.</p>
+        <form action="#">
+          <div class="mb-4">
+            <input type="text" placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <input type="text" placeholder="Enter your email" class="w-full p-2 border border-gray-300 rounded">
+          </div>
+          <div class="mb-4">
+            <textarea placeholder="Enter your Message" class="w-full p-2 border border-gray-300 rounded h-32"></textarea>
+          </div>
+          <div>
+            <input type="button" value="Send Now" class="bg-indigo-500 text-white px-4 py-2 rounded cursor-pointer">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 py-8 text-white">
+    <div class="container mx-auto text-center">
+      <ul class="flex justify-center space-x-4 mb-4">
+        <li><a class="social-icon__link" href="#"><ion-icon name="logo-facebook" class="text-2xl"></ion-icon></a></li>
+        <li><a class="social-icon__link" href="#"><ion-icon name="logo-twitter" class="text-2xl"></ion-icon></a></li>
+        <li><a class="social-icon__link" href="#"><ion-icon name="logo-linkedin" class="text-2xl"></ion-icon></a></li>
+        <li><a class="social-icon__link" href="#"><ion-icon name="logo-instagram" class="text-2xl"></ion-icon></a></li>
+      </ul>
+      <ul class="flex justify-center space-x-4 mb-4">
+        <li><a class="menu__link text-gray-300 hover:text-white" href="index2.html">Home</a></li>
+        <li><a class="menu__link text-gray-300 hover:text-white" href="editor.html">Code Summarization</a></li>
+        <li><a class="menu__link text-gray-300 hover:text-white" href="#about_us">About Us</a></li>
+        <li><a class="menu__link text-gray-300 hover:text-white" href="doc.html">Documentation</a></li>
+        <li><a class="menu__link text-gray-300 hover:text-white" href="contact_form.html">Contact</a></li>
+      </ul>
+      <p>&copy;2024 Source Code Summarizer | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    document.getElementById("menu-btn").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    document.querySelectorAll(".tab_btn").forEach((tab) => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".content").forEach((content) => {
+          content.classList.remove("active");
+        });
+        document.querySelectorAll(".tab_btn").forEach((btn) => {
+          btn.classList.remove("text-indigo-600");
+        });
+        tab.classList.add("text-indigo-600");
+        document
+          .querySelectorAll(".content")
+          [Array.from(tab.parentNode.children).indexOf(tab)].classList.add(
+            "active"
+          );
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source_Code_Summarizer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for the carousel */
+      .carousel-item {
+        display: none;
+      }
+
+      .carousel-item.active {
+        display: block;
+      }
+      .mycontainer{
+        max-width: 80%;
+        
+      }
+      .viewHieght{
+        height: 90vh;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <header class="bg-white shadow  ">
+      <nav class="mycontainer mx-auto p-4 flex justify-between items-center ">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold">
+            SOURCE CODE <br />
+            <span class="text-indigo-600">SUMMARIZER</span>
+          </h1>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+                >Summarize Code</a
+              >
+            </li>
+            <li>
+              <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+                >Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact_form.html"
+                class="text-gray-700 hover:text-indigo-600"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="flex space-x-4">
+            <a
+              href="sign_up.html"
+              class="bg-indigo-600 text-white px-4 py-2 rounded"
+              >Sign Up</a
+            >
+            <a
+              href="login.html"
+              class="bg-gray-600 text-white px-4 py-2 rounded"
+              >Login</a
+            >
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <ion-icon name="menu" size="large"></ion-icon>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="space-y-4 p-4">
+          <li>
+            <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+              >Summarize Code</a
+            >
+          </li>
+          <li>
+            <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+              >Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact_form.html"
+              class="text-gray-700 hover:text-indigo-600"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="sign_up.html"
+              class="bg-indigo-600 text-white px-4 py-2 rounded block text-center"
+              >Sign Up</a
+            >
+          </li>
+          <li>
+            <a
+              href="login.html"
+              class="bg-gray-600 text-white px-4 py-2 rounded block text-center"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="bg-white ">
+      <div
+        class="mycontainer viewHieght mx-auto flex flex-col md:flex-row items-center justify-between p-6"
+      >
+        <div class="text-section text-center md:text-left">
+          <h1 class="text-4xl font-bold">
+            SIMPLIFY YOUR<br />CODE WITH OUR <br />
+            <span class="text-indigo-600">SUMMARIZER</span>
+          </h1>
+          <p class="mt-4 text-gray-700">Try Our Code Summarizer Now!</p>
+          <div
+            class="mt-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4"
+          >
+            <a
+              href="sign_up.html"
+              class="bg-indigo-600 text-white px-4 py-2 rounded"
+              >Get Started</a
+            >
+            <a
+              href="editor.html"
+              class="bg-gray-600 text-white px-4 py-2 rounded"
+              >Summarize Now</a
+            >
+          </div>
+        </div>
+        <div class="mt-8 md:mt-0">
+          <img
+            src="./images/3867340@4x.png"
+            alt="Code Summarizer Image"
+            class="w-full max-w-sm mx-auto md:mx-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-8 px-8">
+      <div
+        class="mycontainer mx-auto flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-6"
+      >
+        <div class="item flex-1">
+          <h1 class="text-3xl font-bold">
+            <span class="text-indigo-600">Summarizer</span> Model
+          </h1>
+          <p class="mt-4 text-gray-700">
+            Experience the precision of our summarization model. Combining
+            advanced algorithms with cutting-edge NLP techniques, our model
+            generates clear and concise summaries for Java, Python, and
+            JavaScript code, streamlining your coding process.
+          </p>
+        </div>
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="box bg-white p-6 rounded-lg shadow-md text-center">
+            <img src="./images/java.png" alt="Java Code" class="w-24 mx-full" />
+            <h1 class="text-xl font-bold mt-4">Java Code</h1>
+            <p class="mt-2 text-gray-700">
+              Concise Summaries with our Java Code Summarizer
+            </p>
+          </div>
+          <div class="box bg-white p-6 rounded-lg shadow-md text-center">
+            <img
+              src="./images/python.png"
+              alt="Python Code"
+              class="w-24 mx-auto"
+            />
+            <h1 class="text-xl font-bold mt-4">Python Code</h1>
+            <p class="mt-2 text-gray-700">
+              Concise Summaries with our Python Code Summarizer
+            </p>
+          </div>
+          <div
+            class="box bg-indigo-600 p-6 rounded-lg shadow-md text-center text-white flex items-center justify-center"
+          >
+            <a href="editor.html" class="text-xl font-bold">GET STARTED NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-8 px-8" id="about_us">
+      <div
+        class="mycontainer mx-auto flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-6"
+      >
+        <div class="about_text">
+          <h3 class="text-2xl font-bold text-gray-700">WHO WE ARE</h3>
+          <h1 class="text-3xl font-bold mt-2">
+            <span class="text-indigo-600">Welcome to</span> SCS
+          </h1>
+          <p class="mt-4 text-gray-700">
+            We are dedicated to simplifying and enhancing the experience of code
+            summarization. Our mission is to empower developers by providing
+            efficient tools that automate the process of understanding and
+            summarizing code snippets, allowing them to focus more on innovation
+            and problem-solving.
+          </p>
+        </div>
+        <div>
+          <img
+            src="./images/about us.png"
+            alt="About Us"
+            class="w-full max-w-sm mx-auto md:mx-0"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-8 px-8" id="documentation">
+      <div class="mycontainer mx-auto text-center">
+        <img
+          src="./images/doc pic.png"
+          alt="Documentation"
+          class="w-full max-w-md mx-auto"
+        />
+        <div class="img_text mt-4 text-gray-700 text-xl">
+          See our Documentation
+        </div>
+        <div class="mt-4">
+          <a href="doc.html" class="bg-indigo-600 text-white px-4 py-2 rounded"
+            >Open Documentation</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 py-8 text-white">
+      <div class="mycontainer mx-auto text-center">
+        <ul class="flex flex-wrap justify-center space-x-4 mb-4">
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-facebook" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-twitter" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-linkedin" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-instagram" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="flex flex-wrap justify-center space-x-4 mb-4">
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="index2.html"
+              >Home</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="editor.html"
+              >Code Summarization</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="#about_us"
+              >About Us</a
+            >
+          </li>
+          <li class="my-2">
+            <a class="menu__link text-gray-300 hover:text-white" href="doc.html"
+              >Documentation</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="contact_form.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p>&copy;2024 Source Code Summarizer</p>
+
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+
+      document.querySelectorAll(".tab_btn").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".content").forEach((content) => {
+            content.classList.remove("active");
+          });
+          document.querySelectorAll(".tab_btn").forEach((btn) => {
+            btn.classList.remove("text-indigo-600");
+          });
+          tab.classList.add("text-indigo-600");
+          document
+            .querySelectorAll(".content")
+            [Array.from(tab.parentNode.children).indexOf(tab)].classList.add(
+              "active"
+            );
+        });
+      });
+    </script>
+  </body>
+</html>

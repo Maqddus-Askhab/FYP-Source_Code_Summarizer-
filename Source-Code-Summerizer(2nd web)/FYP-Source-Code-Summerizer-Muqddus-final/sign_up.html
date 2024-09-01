@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Source_Code_Summarizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styles for the carousel */
+      .carousel-item {
+        display: none;
+      }
+
+      .carousel-item.active {
+        display: block;
+      }
+    </style>
+  </head>
+
+<body>
+
+  <header class="bg-white shadow">
+    <nav class="container mx-auto p-4 flex justify-between items-center ">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold">
+          SOURCE CODE <br />
+          <span class="text-indigo-600">SUMMARIZER</span>
+        </h1>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <ul class="flex space-x-4">
+          <li>
+            <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+              >Summarize Code</a
+            >
+          </li>
+          <li>
+            <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+              >Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact_form.html"
+              class="text-gray-700 hover:text-indigo-600"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="flex space-x-4">
+          <a
+            href="sign_up.html"
+            class="bg-indigo-600 text-white px-4 py-2 rounded"
+            >Sign Up</a
+          >
+          <a
+            href="login.html"
+            class="bg-gray-600 text-white px-4 py-2 rounded"
+            >Login</a
+          >
+        </div>
+      </div>
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <ion-icon name="menu" size="large"></ion-icon>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="space-y-4 p-4">
+        <li>
+          <a href="index2.html" class="text-gray-700 hover:text-indigo-600"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="editor.html" class="text-gray-700 hover:text-indigo-600"
+            >Summarize Code</a
+          >
+        </li>
+        <li>
+          <a href="#about_us" class="text-gray-700 hover:text-indigo-600"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="doc.html" class="text-gray-700 hover:text-indigo-600"
+            >Documentation</a
+          >
+        </li>
+        <li>
+          <a
+            href="contact_form.html"
+            class="text-gray-700 hover:text-indigo-600"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a
+            href="sign_up.html"
+            class="bg-indigo-600 text-white px-4 py-2 rounded block text-center"
+            >Sign Up</a
+          >
+        </li>
+        <li>
+          <a
+            href="login.html"
+            class="bg-gray-600 text-white px-4 py-2 rounded block text-center"
+            >Login</a
+          >
+        </li>
+      </ul>
+    </div>
+  </header>
+
+    <div class="sign_up container mx-auto my-10 p-6 bg-white shadow-md rounded-md">
+        <div class="container">
+            <div class="title text-2xl font-bold mb-6">REGISTRATION FORM</div>
+            <div class="content">
+                <form id="registrationForm">
+                    <div class="user-details grid grid-cols-1 md:grid-cols-2 gap-6 user-details">
+                        <div class="input-box">
+                            <span class="details block text-gray-700">Full Name</span>
+                            <input type="text" class="w-full p-2 border border-gray-300 rounded mt-1" id="fullName" name="fullName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details block text-gray-700">Username</span>
+                            <input type="text" class="w-full p-2 border border-gray-300 rounded mt-1" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details block text-gray-700">Email</span>
+                            <input type="email" class="w-full p-2 border border-gray-300 rounded mt-1" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details block text-gray-700">Phone Number</span>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your number" required class="w-full p-2 border border-gray-300 rounded mt-1">
+                        </div>
+                        <div class="input-box">
+                            <span class="details block text-gray-700">Password</span>
+                            <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter your password" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details block  text-gray-700">Confirm Password</span>
+                            <input type="password" id="confirmPassword" 
+                            class="w-full p-2 border border-gray-300 rounded mt-1" name="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="gender-details mt-6">
+                        <span class="gender-title block text-gray-700">Gender</span>
+                        <div class="category flex space-x-4 mt-2">
+                          <input type="radio" name="gender" id="male" value="Male">
+                          <label for="male">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                          </label>
+                          <input type="radio" name="gender" id="female" value="Female">
+                          <label for="female">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                          </label>
+                          <input type="radio" name="gender" id="preferNotToSay" value="Prefer not to say">
+                          <label for="preferNotToSay">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                          </label>
+                        </div>
+                      </div>
+                    <div class="button mt-6">
+                        <input type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded cursor-pointer" value="Register">
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 py-8 text-white">
+      <div class="container mx-auto text-center">
+        <ul class="flex flex-wrap justify-center space-x-4 mb-4">
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-facebook" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-twitter" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-linkedin" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+          <li class="my-2">
+            <a class="social-icon__link" href="#"
+              ><ion-icon name="logo-instagram" class="text-2xl"></ion-icon
+            ></a>
+          </li>
+        </ul>
+        <ul class="flex flex-wrap justify-center space-x-4 mb-4">
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="index2.html"
+              >Home</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="editor.html"
+              >Code Summarization</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="#about_us"
+              >About Us</a
+            >
+          </li>
+          <li class="my-2">
+            <a class="menu__link text-gray-300 hover:text-white" href="doc.html"
+              >Documentation</a
+            >
+          </li>
+          <li class="my-2">
+            <a
+              class="menu__link text-gray-300 hover:text-white"
+              href="contact_form.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <p>&copy;2024 Source Code Summarizer</p>
+
+        <p>All Rights Reserved</p>
+      </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", async function(event) {
+            event.preventDefault();
+    
+            const fullName = document.getElementById("fullName").value;
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+    
+            const userData = {
+                fullName: fullName,
+                userName: username,
+                email: email,
+                phoneNumber: phoneNumber,
+                password: password,
+                confirmPassword: confirmPassword,
+                gender: gender
+            };
+    
+            // try {
+                const response = await fetch("http://localhost:8006/signup", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(userData)
+                });
+                console.log("response: ", response)
+                // console.log("resp.msg: ", response.message)
+                // console.log('result json = ', response.json())
+                const result = await response.json();
+                console.log("res: ", result)
+                if (result.message) {
+                    
+                    // alert(result.message);c  
+                    // alert("Successfull");
+                    window.location.href = "editor.html";
+                } 
+
+                else {
+                    alert("Error: " + result.detail);
+                }
+            // } 
+    //         catch (error) {
+    //             console.error("Error:", error);
+    //             alert("An error occurred. Please try again later.");
+    // }
+        });
+    </script>
+     <script>
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+
+      document.querySelectorAll(".tab_btn").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          document.querySelectorAll(".content").forEach((content) => {
+            content.classList.remove("active");
+          });
+          document.querySelectorAll(".tab_btn").forEach((btn) => {
+            btn.classList.remove("text-indigo-600");
+          });
+          tab.classList.add("text-indigo-600");
+          document
+            .querySelectorAll(".content")
+            [Array.from(tab.parentNode.children).indexOf(tab)].classList.add(
+              "active"
+            );
+        });
+      });
+    </script>
+  </body>
+</html>
+</body>
+
+</html>
